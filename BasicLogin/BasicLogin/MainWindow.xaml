@@ -1,0 +1,50 @@
+﻿<Window x:Class="BasicLogin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BasicLogin"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="400">
+    <Grid>
+        <Border Padding="20">
+        <StackPanel>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Content="Korisnicko ime:" Grid.Column="0"/>
+                    <TextBox x:Name="korisnickoImeBox" Grid.Column="1"/>
+
+                </Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Content="Lozinka:" Grid.Column="0"/>
+                    <PasswordBox x:Name="passBox"  Grid.Column="1" />
+
+                </Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="otkaziBtn" Content="Otkazi" Grid.Column="0" Margin="50,10" Click="OtkaziBtn_Click"/>
+                    <Button x:Name="ulogujBtn" Content="Ulogu se" Grid.Column="1" Margin="50,10" Click="UlogujBtn_Click"/>
+
+                </Grid>
+
+
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
